@@ -23,7 +23,10 @@ server {
 
 ```
 
-and run command
+first time, try to testing using command
+> docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d [domain-name]
+
+while no problem, run command
 > docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d [domain-name]
 
 after success, edit config **domain.conf** like this
